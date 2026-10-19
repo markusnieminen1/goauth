@@ -53,8 +53,8 @@ func NewAccountManagerService(users user.Repository, sessions session.Repository
 
 func (u *AccountManagerService) Register(ctx context.Context, input sharedmodels.RegisterInput) (sharedmodels.AuthCookies, error) {
 
-	input.Email = strings.TrimSpace(input.Email)
-	input.Username = strings.TrimSpace(input.Username)
+	input.Email = normalisedIdentifier(input.Email)
+	input.Username = normalisedIdentifier(input.Username)
 
 	if err := u.validator.ValidateEmail(input.Email); err != nil {
 		return sharedmodels.AuthCookies{}, err
@@ -101,7 +101,8 @@ func (u *AccountManagerService) GetByID(ctx context.Context, userID int64) (shar
 
 func (u *AccountManagerService) UpdateEmail(ctx context.Context, input sharedmodels.UpdateEmailInput) (sharedmodels.LimitedUserAuthData, error) {
 
-	input.Email = strings.TrimSpace(input.Email)
+	input.Email = normalisedIdentifier(input.Email)
+
 	if err := u.validator.ValidateUserID(input.UserID); err != nil {
 		return sharedmodels.LimitedUserAuthData{}, err
 	}
@@ -123,7 +124,8 @@ func (u *AccountManagerService) UpdateEmail(ctx context.Context, input sharedmod
 
 func (u *AccountManagerService) UpdateUsername(ctx context.Context, input sharedmodels.UpdateUsernameInput) (sharedmodels.LimitedUserAuthData, error) {
 
-	input.Username = strings.TrimSpace(input.Username)
+	input.Username = normalisedIdentifier(input.Username)
+
 	if err := u.validator.ValidateUserID(input.UserID); err != nil {
 		return sharedmodels.LimitedUserAuthData{}, err
 	}
@@ -176,13 +178,13 @@ func (u *AccountManagerService) ChangePassword(ctx context.Context, input shared
 
 func (u *AccountManagerService) verifyPassword(ctx context.Context, userID int64, plain string) error {
 
-	creds, err := u.users.GetCredentialsByID(ctx, userID)
+	credentials, err := u.users.GetCredentialsByID(ctx, userID)
 
 	if err != nil {
 		return err
 	}
 
-	valid, err := u.hasher.Verify(plain, creds.PasswordHash)
+	valid, err := u.hasher.Verify(plain, credentials.PasswordHash)
 
 	if err != nil {
 		return err
@@ -209,3 +211,7 @@ func (u *AccountManagerService) Delete(ctx context.Context, userID int64) error 
 }
 
 var _ AccountService = (*AccountManagerService)(nil)
+
+func normalisedIdentifier(s string) string {
+	return strings.ToLower(strings.TrimSpace(s))
+}
