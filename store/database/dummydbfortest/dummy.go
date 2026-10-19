@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/domain/sharedmodels"
-	"github.com/markusnieminen1/basic-auth/setup"
+	"github.com/markusnieminen1/goauth/domain/sharedmodels"
+	"github.com/markusnieminen1/goauth/setup"
 )
 
 type UserManagerRepo struct {

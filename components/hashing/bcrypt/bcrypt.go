@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/markusnieminen1/basic-auth/components/hashing"
-	"github.com/markusnieminen1/basic-auth/setup"
+	"github.com/markusnieminen1/goauth/components/hashing"
+	"github.com/markusnieminen1/goauth/setup"
 	"golang.org/x/crypto/bcrypt"
 )
 

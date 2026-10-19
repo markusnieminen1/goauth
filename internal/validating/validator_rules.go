@@ -1,7 +1,7 @@
 package validating
 
 import (
-	"github.com/markusnieminen1/basic-auth/setup"
+	"github.com/markusnieminen1/goauth/setup"
 )
 
 type PasswordRules struct {

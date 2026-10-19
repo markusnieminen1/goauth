@@ -5,7 +5,7 @@ import (
 	"crypto/subtle"
 	"encoding/hex"
 
-	"github.com/markusnieminen1/basic-auth/components/hashing"
+	"github.com/markusnieminen1/goauth/components/hashing"
 )
 
 const prefix = "dummy$"

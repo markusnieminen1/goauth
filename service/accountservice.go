@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/markusnieminen1/basic-auth/components/hashing"
-	"github.com/markusnieminen1/basic-auth/domain/sharedmodels"
-	"github.com/markusnieminen1/basic-auth/internal/validating"
-	"github.com/markusnieminen1/basic-auth/store/session"
-	"github.com/markusnieminen1/basic-auth/store/user"
+	"github.com/markusnieminen1/goauth/components/hashing"
+	"github.com/markusnieminen1/goauth/domain/sharedmodels"
+	"github.com/markusnieminen1/goauth/internal/validating"
+	"github.com/markusnieminen1/goauth/store/session"
+	"github.com/markusnieminen1/goauth/store/user"
 )
 
 type AccountManagerService struct {

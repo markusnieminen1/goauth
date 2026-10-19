@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/markusnieminen1/basic-auth/domain/customerrors"
-	"github.com/markusnieminen1/basic-auth/domain/sharedmodels"
-	"github.com/markusnieminen1/basic-auth/service"
+	"github.com/markusnieminen1/goauth/domain/customerrors"
+	"github.com/markusnieminen1/goauth/domain/sharedmodels"
+	"github.com/markusnieminen1/goauth/service"
 )
 
 type LoginHandler struct {

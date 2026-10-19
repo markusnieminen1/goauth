@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/domain/customerrors"
+	"github.com/markusnieminen1/goauth/domain/customerrors"
 )
 
 type SimpleRateLimiter struct {

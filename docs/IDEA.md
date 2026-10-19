@@ -1,4 +1,4 @@
-# basic-auth
+# goauth
 
 This project is sub-part of Hive Helsinki curriculum. 
 

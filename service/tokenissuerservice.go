@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/components/caching"
-	"github.com/markusnieminen1/basic-auth/components/token"
-	"github.com/markusnieminen1/basic-auth/setup"
+	"github.com/markusnieminen1/goauth/components/caching"
+	"github.com/markusnieminen1/goauth/components/token"
+	"github.com/markusnieminen1/goauth/setup"
 )
 
 type TokenIssuerService struct {

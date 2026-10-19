@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/components/token"
+	"github.com/markusnieminen1/goauth/components/token"
 )
 
 // Access issues tokens shaped "dummy.<userID>.<expiresUnixNano>.<nonce>". The nonce

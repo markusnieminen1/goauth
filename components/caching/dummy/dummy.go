@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/components/caching"
+	"github.com/markusnieminen1/goauth/components/caching"
 )
 
 type entry struct {

@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/components/caching"
-	"github.com/markusnieminen1/basic-auth/components/hashing"
-	"github.com/markusnieminen1/basic-auth/domain/sharedmodels"
-	"github.com/markusnieminen1/basic-auth/setup"
-	"github.com/markusnieminen1/basic-auth/store/session"
-	"github.com/markusnieminen1/basic-auth/store/user"
+	"github.com/markusnieminen1/goauth/components/caching"
+	"github.com/markusnieminen1/goauth/components/hashing"
+	"github.com/markusnieminen1/goauth/domain/sharedmodels"
+	"github.com/markusnieminen1/goauth/setup"
+	"github.com/markusnieminen1/goauth/store/session"
+	"github.com/markusnieminen1/goauth/store/user"
 )
 
 var ErrInvalidCredentials = errors.New("invalid credentials")

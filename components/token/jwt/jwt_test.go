@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/components/token"
+	"github.com/markusnieminen1/goauth/components/token"
 )
 
 var ctx = context.Background()

@@ -11,7 +11,7 @@ import (
 
 	_ "github.com/mattn/go-sqlite3"
 
-	"github.com/markusnieminen1/basic-auth/store/database"
+	"github.com/markusnieminen1/goauth/store/database"
 )
 
 var ctx = context.Background()

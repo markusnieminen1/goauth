@@ -5,9 +5,9 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/markusnieminen1/basic-auth/domain/customerrors"
-	"github.com/markusnieminen1/basic-auth/service"
-	"github.com/markusnieminen1/basic-auth/store/user"
+	"github.com/markusnieminen1/goauth/domain/customerrors"
+	"github.com/markusnieminen1/goauth/service"
+	"github.com/markusnieminen1/goauth/store/user"
 )
 
 func WriteErrorHttp(w http.ResponseWriter, err customerrors.CustomError) {

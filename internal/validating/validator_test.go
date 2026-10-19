@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/markusnieminen1/basic-auth/domain/customerrors"
+	"github.com/markusnieminen1/goauth/domain/customerrors"
 )
 
 func TestPasswordForbiddenChars(t *testing.T) {

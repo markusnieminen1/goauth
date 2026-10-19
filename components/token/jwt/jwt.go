@@ -14,7 +14,7 @@ import (
 
 	gojwt "github.com/golang-jwt/jwt/v5"
 
-	"github.com/markusnieminen1/basic-auth/components/token"
+	"github.com/markusnieminen1/goauth/components/token"
 )
 
 type Access struct {

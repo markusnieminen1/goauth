@@ -6,7 +6,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/store/session"
+	"github.com/markusnieminen1/goauth/store/session"
 )
 
 type Repo struct {

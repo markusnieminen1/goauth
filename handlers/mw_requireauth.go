@@ -3,8 +3,8 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/markusnieminen1/basic-auth/domain/customerrors"
-	"github.com/markusnieminen1/basic-auth/domain/sharedmodels"
+	"github.com/markusnieminen1/goauth/domain/customerrors"
+	"github.com/markusnieminen1/goauth/domain/sharedmodels"
 )
 
 // RequireAuth rejects the request with 401 unless the token middleware placed a

@@ -1,6 +1,6 @@
 package validating
 
-import "github.com/markusnieminen1/basic-auth/domain/customerrors"
+import "github.com/markusnieminen1/goauth/domain/customerrors"
 
 func (u *UserDataValidator) ValidateUserID(id int64) error {
 

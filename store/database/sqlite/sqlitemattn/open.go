@@ -8,9 +8,9 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/markusnieminen1/basic-auth/setup"
-	"github.com/markusnieminen1/basic-auth/store/database"
-	"github.com/markusnieminen1/basic-auth/store/database/sqlite"
+	"github.com/markusnieminen1/goauth/setup"
+	"github.com/markusnieminen1/goauth/store/database"
+	"github.com/markusnieminen1/goauth/store/database/sqlite"
 	_ "github.com/mattn/go-sqlite3"
 )
 

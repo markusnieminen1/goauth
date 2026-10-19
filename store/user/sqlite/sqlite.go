@@ -6,8 +6,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/markusnieminen1/basic-auth/domain/sharedmodels"
-	"github.com/markusnieminen1/basic-auth/store/user"
+	"github.com/markusnieminen1/goauth/domain/sharedmodels"
+	"github.com/markusnieminen1/goauth/store/user"
 )
 
 type Repo struct {

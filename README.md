@@ -1,4 +1,4 @@
-# basic-auth
+# goauth
 
 Not ready yet. 
 
@@ -7,11 +7,11 @@ Cookie based authentication for Go services: register, login, refresh, logout. E
 ## Quick start
 
 ```sh
-go get github.com/markusnieminen1/basic-auth
+go get github.com/markusnieminen1/goauth
 ```
 
 ```go
-app, err := basicauth.NewAuthApp(basicauth.Config{}) // bcrypt, JWT, sqlite (./auth.db), UUID refresh tokens
+app, err := goauth.NewAuthApp(goauth.Config{}) // bcrypt, JWT, sqlite (./auth.db), UUID refresh tokens
 if err != nil {
 	log.Fatal(err)
 }
@@ -29,7 +29,7 @@ expired, err := app.AuthenticationService.Logout(ctx, cookies)   // revoke, then
 
 ```go
 // Get the user id from request (int64)
-userId := basicauth.handlers.UserID(r)
+userId := goauth.handlers.UserID(r)
 ```
 
 ## Structure 

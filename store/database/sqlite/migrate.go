@@ -6,7 +6,7 @@ import (
 	_ "embed"
 	"fmt"
 
-	"github.com/markusnieminen1/basic-auth/store/database"
+	"github.com/markusnieminen1/goauth/store/database"
 )
 
 //go:embed schema/tables.sql

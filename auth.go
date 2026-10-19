@@ -3,11 +3,11 @@
 // Quick start:
 //
 //	import (
-//		auth "github.com/markusnieminen1/basic-auth"
+//		auth "github.com/markusnieminen1/goauth"
 //		)
 //	app, err := auth.NewAuthApp(auth.Config{})
 //	defer app.Close()
-package auth
+package goauth
 
 import (
 	"context"
@@ -16,21 +16,21 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/components/caching"
-	"github.com/markusnieminen1/basic-auth/components/hashing"
-	"github.com/markusnieminen1/basic-auth/components/hashing/bcrypt"
-	"github.com/markusnieminen1/basic-auth/components/token"
-	"github.com/markusnieminen1/basic-auth/components/token/jwt"
-	"github.com/markusnieminen1/basic-auth/components/token/uuid"
-	"github.com/markusnieminen1/basic-auth/handlers"
-	"github.com/markusnieminen1/basic-auth/service"
-	"github.com/markusnieminen1/basic-auth/setup"
-	"github.com/markusnieminen1/basic-auth/store/database/sqlite"
-	"github.com/markusnieminen1/basic-auth/store/database/sqlite/sqlitemattn"
-	"github.com/markusnieminen1/basic-auth/store/session"
-	sessionsqlite "github.com/markusnieminen1/basic-auth/store/session/sqlite"
-	"github.com/markusnieminen1/basic-auth/store/user"
-	usersqlite "github.com/markusnieminen1/basic-auth/store/user/sqlite"
+	"github.com/markusnieminen1/goauth/components/caching"
+	"github.com/markusnieminen1/goauth/components/hashing"
+	"github.com/markusnieminen1/goauth/components/hashing/bcrypt"
+	"github.com/markusnieminen1/goauth/components/token"
+	"github.com/markusnieminen1/goauth/components/token/jwt"
+	"github.com/markusnieminen1/goauth/components/token/uuid"
+	"github.com/markusnieminen1/goauth/handlers"
+	"github.com/markusnieminen1/goauth/service"
+	"github.com/markusnieminen1/goauth/setup"
+	"github.com/markusnieminen1/goauth/store/database/sqlite"
+	"github.com/markusnieminen1/goauth/store/database/sqlite/sqlitemattn"
+	"github.com/markusnieminen1/goauth/store/session"
+	sessionsqlite "github.com/markusnieminen1/goauth/store/session/sqlite"
+	"github.com/markusnieminen1/goauth/store/user"
+	usersqlite "github.com/markusnieminen1/goauth/store/user/sqlite"
 )
 
 // Config allows making setup differing from default setup

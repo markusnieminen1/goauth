@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/setup"
+	"github.com/markusnieminen1/goauth/setup"
 )
 
 func TestKeyIsCreatedOnceAndReused(t *testing.T) {

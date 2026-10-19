@@ -5,9 +5,9 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/markusnieminen1/basic-auth/components/token"
-	"github.com/markusnieminen1/basic-auth/domain/sharedmodels"
-	"github.com/markusnieminen1/basic-auth/service"
+	"github.com/markusnieminen1/goauth/components/token"
+	"github.com/markusnieminen1/goauth/domain/sharedmodels"
+	"github.com/markusnieminen1/goauth/service"
 )
 
 // NewValidateTokenMiddleware sets AuthCookies.UserID in the context when the request is

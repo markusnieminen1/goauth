@@ -11,14 +11,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/domain/sharedmodels"
-	"github.com/markusnieminen1/basic-auth/service"
-	"github.com/markusnieminen1/basic-auth/store/database/sqlite"
-	"github.com/markusnieminen1/basic-auth/store/database/sqlite/sqlitemattn"
-	"github.com/markusnieminen1/basic-auth/store/session"
-	sessionsqlite "github.com/markusnieminen1/basic-auth/store/session/sqlite"
-	"github.com/markusnieminen1/basic-auth/store/user"
-	usersqlite "github.com/markusnieminen1/basic-auth/store/user/sqlite"
+	"github.com/markusnieminen1/goauth/domain/sharedmodels"
+	"github.com/markusnieminen1/goauth/service"
+	"github.com/markusnieminen1/goauth/store/database/sqlite"
+	"github.com/markusnieminen1/goauth/store/database/sqlite/sqlitemattn"
+	"github.com/markusnieminen1/goauth/store/session"
+	sessionsqlite "github.com/markusnieminen1/goauth/store/session/sqlite"
+	"github.com/markusnieminen1/goauth/store/user"
+	usersqlite "github.com/markusnieminen1/goauth/store/user/sqlite"
 
 	_ "github.com/mattn/go-sqlite3"
 )

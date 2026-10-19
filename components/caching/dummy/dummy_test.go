@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/components/caching"
+	"github.com/markusnieminen1/goauth/components/caching"
 )
 
 var ctx = context.Background()

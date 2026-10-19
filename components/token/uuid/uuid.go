@@ -9,7 +9,7 @@ import (
 	"encoding/hex"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/components/token"
+	"github.com/markusnieminen1/goauth/components/token"
 )
 
 // https://www.rfc-editor.org/info/rfc9562/

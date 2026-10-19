@@ -10,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/markusnieminen1/basic-auth/setup"
+	"github.com/markusnieminen1/goauth/setup"
 )
 
 // LoadOrCreateKey returns the Ed25519 private key stored at path (PEM, PKCS#8).

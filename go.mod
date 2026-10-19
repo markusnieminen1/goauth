@@ -1,4 +1,4 @@
-module github.com/markusnieminen1/basic-auth
+module github.com/markusnieminen1/goauth
 
 go 1.26.0
 

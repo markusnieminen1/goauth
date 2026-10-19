@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/markusnieminen1/basic-auth/components/hashing/bcrypt"
+	"github.com/markusnieminen1/goauth/components/hashing/bcrypt"
 )
 
 // Minimum cost keeps the tests fast. Production uses setup.BCRYPT_Cost.

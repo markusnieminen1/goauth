@@ -1,4 +1,4 @@
-package auth
+package goauth
 
 import (
 	"context"
@@ -9,11 +9,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/markusnieminen1/basic-auth/domain/sharedmodels"
-	"github.com/markusnieminen1/basic-auth/handlers"
-	"github.com/markusnieminen1/basic-auth/store/database/sqlite/sqlitemattn"
-	sessionsqlite "github.com/markusnieminen1/basic-auth/store/session/sqlite"
-	usersqlite "github.com/markusnieminen1/basic-auth/store/user/sqlite"
+	"github.com/markusnieminen1/goauth/domain/sharedmodels"
+	"github.com/markusnieminen1/goauth/handlers"
+	"github.com/markusnieminen1/goauth/store/database/sqlite/sqlitemattn"
+	sessionsqlite "github.com/markusnieminen1/goauth/store/session/sqlite"
+	usersqlite "github.com/markusnieminen1/goauth/store/user/sqlite"
 )
 
 const (
@@ -38,7 +38,7 @@ const (
 // It stops at the first failed check, and the error names it.
 func (a *App) ConfigTest(ctx context.Context) error {
 
-	dir, err := os.MkdirTemp("", "basic-auth-configtest-")
+	dir, err := os.MkdirTemp("", "goauth-configtest-")
 	if err != nil {
 		return fmt.Errorf("auth: config test: temporary directory: %w", err)
 	}

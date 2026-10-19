@@ -3,9 +3,9 @@ package postgres
 import (
 	"context"
 
-	"github.com/markusnieminen1/basic-auth/domain/sharedmodels"
-	"github.com/markusnieminen1/basic-auth/store/database"
-	"github.com/markusnieminen1/basic-auth/store/user"
+	"github.com/markusnieminen1/goauth/domain/sharedmodels"
+	"github.com/markusnieminen1/goauth/store/database"
+	"github.com/markusnieminen1/goauth/store/user"
 )
 
 // Repo is a not-yet-implemented placeholder. Every method returns database.ErrNotImplemented

@@ -1,4 +1,4 @@
-package auth
+package goauth
 
 import (
 	"context"
@@ -18,18 +18,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/markusnieminen1/basic-auth/components/caching"
-	cachedummy "github.com/markusnieminen1/basic-auth/components/caching/dummy"
-	"github.com/markusnieminen1/basic-auth/components/hashing/bcrypt"
-	hashdummy "github.com/markusnieminen1/basic-auth/components/hashing/dummy"
-	tokendummy "github.com/markusnieminen1/basic-auth/components/token/dummy"
-	"github.com/markusnieminen1/basic-auth/components/token/jwt"
-	"github.com/markusnieminen1/basic-auth/domain/sharedmodels"
-	"github.com/markusnieminen1/basic-auth/handlers"
-	"github.com/markusnieminen1/basic-auth/setup"
-	"github.com/markusnieminen1/basic-auth/store/database/sqlite/sqlitemattn"
-	sessionsqlite "github.com/markusnieminen1/basic-auth/store/session/sqlite"
-	usersqlite "github.com/markusnieminen1/basic-auth/store/user/sqlite"
+	"github.com/markusnieminen1/goauth/components/caching"
+	cachedummy "github.com/markusnieminen1/goauth/components/caching/dummy"
+	"github.com/markusnieminen1/goauth/components/hashing/bcrypt"
+	hashdummy "github.com/markusnieminen1/goauth/components/hashing/dummy"
+	tokendummy "github.com/markusnieminen1/goauth/components/token/dummy"
+	"github.com/markusnieminen1/goauth/components/token/jwt"
+	"github.com/markusnieminen1/goauth/domain/sharedmodels"
+	"github.com/markusnieminen1/goauth/handlers"
+	"github.com/markusnieminen1/goauth/setup"
+	"github.com/markusnieminen1/goauth/store/database/sqlite/sqlitemattn"
+	sessionsqlite "github.com/markusnieminen1/goauth/store/session/sqlite"
+	usersqlite "github.com/markusnieminen1/goauth/store/user/sqlite"
 )
 
 var ctx = context.Background()

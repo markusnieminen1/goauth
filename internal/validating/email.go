@@ -4,8 +4,8 @@ import (
 	"net/mail"
 	"strings"
 
-	"github.com/markusnieminen1/basic-auth/domain/customerrors"
-	"github.com/markusnieminen1/basic-auth/setup"
+	"github.com/markusnieminen1/goauth/domain/customerrors"
+	"github.com/markusnieminen1/goauth/setup"
 )
 
 func (u *UserDataValidator) ValidateEmail(email string) error {
