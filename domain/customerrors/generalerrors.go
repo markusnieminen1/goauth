@@ -25,6 +25,7 @@ var (
 	ErrUsernameTooShort      = CustomError{Code: http.StatusBadRequest, PublicMessage: "username is below the minimum length"}
 	ErrUsernameTooLong       = CustomError{Code: http.StatusBadRequest, PublicMessage: "username exceeds the maximum length"}
 	ErrUsernameInvalidChar   = CustomError{Code: http.StatusBadRequest, PublicMessage: "username contains invalid characters (only alphanumeric, underscores, or hyphens allowed)"}
+	ErrUsernameNoLetters     = CustomError{Code: http.StatusBadRequest, PublicMessage: "username must contain at least one alphabetical letter"}
 	ErrUsernameForbiddenChar = CustomError{Code: http.StatusBadRequest, PublicMessage: "username contains a forbidden character"}
 	ErrIDNegative            = CustomError{Code: http.StatusBadRequest, PublicMessage: "user id cannot be negative"}
 

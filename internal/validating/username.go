@@ -29,8 +29,14 @@ func (u *UserDataValidator) ValidateUsername(username string) error {
 		return customerrors.ErrUsernameForbiddenChar
 	}
 
+	hasLetters := false
+
 	for _, r := range trimmed {
-		if unicode.IsLetter(r) || unicode.IsDigit(r) {
+		if unicode.IsLetter(r) {
+			hasLetters = true
+			continue
+		}
+		if unicode.IsDigit(r) {
 			continue
 		}
 
@@ -39,6 +45,10 @@ func (u *UserDataValidator) ValidateUsername(username string) error {
 		}
 
 		return customerrors.ErrUsernameInvalidChar
+	}
+
+	if !hasLetters {
+		return customerrors.ErrUsernameNoLetters
 	}
 
 	return nil
