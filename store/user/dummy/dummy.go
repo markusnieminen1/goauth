@@ -4,6 +4,7 @@ package dummy
 
 import (
 	"context"
+	"fmt"
 	"sync"
 
 	"github.com/markusnieminen1/goauth/domain/sharedmodels"
@@ -166,6 +167,10 @@ func (r *Repo) checkTaken(except int64, username, email string) error {
 	}
 
 	return nil
+}
+
+func (r *Repo) GetByEmail(ctx context.Context, username string) (sharedmodels.AllUserProfileAuthData, error) {
+	return sharedmodels.AllUserProfileAuthData{}, fmt.Errorf("not implemented")
 }
 
 var _ user.Repository = (*Repo)(nil)
