@@ -34,7 +34,7 @@ func (u *UserDataValidator) ValidateUsername(username string) error {
 			continue
 		}
 
-		if u.usernamerules.AllowSpecialChars && (r == '_' || r == '-') {
+		if u.usernamerules.AllowSpecialChars || (r == '_' || r == '-') {
 			continue
 		}
 
