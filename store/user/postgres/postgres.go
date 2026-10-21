@@ -44,6 +44,10 @@ func (r *Repo) Delete(ctx context.Context, userID int64) error {
 	return database.ErrNotImplemented
 }
 
+func (r *Repo) GetByEmail(ctx context.Context, username string) (sharedmodels.AllUserProfileAuthData, error) {
+	return sharedmodels.AllUserProfileAuthData{}, database.ErrNotImplemented
+}
+
 var _ user.Repository = (*Repo)(nil)
 
 func New() *Repo {
