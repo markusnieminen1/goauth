@@ -1,4 +1,4 @@
-// Package auth has basic functionality for Authentication and later Authorization.
+// Package goauth has basic functionality for Authentication and later Authorization.
 //
 // Quick start:
 //
